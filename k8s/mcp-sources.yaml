@@ -1,0 +1,10 @@
+apiVersion: mcp.gateway.io/v1alpha1
+kind: McpSource
+metadata:
+  name: com.stripe/mcp
+  namespace: default
+spec:
+  binding:
+    type: http
+    command: com.stripe/mcp
+    secret: vault://mcp-secrets/com-stripe-mcp
