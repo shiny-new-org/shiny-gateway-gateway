@@ -1,0 +1,13 @@
+apiVersion: mcp.gateway.io/v1alpha1
+kind: GatewayConfig
+metadata:
+  name: shiny-gateway
+  namespace: default
+spec:
+  name: shiny-gateway
+  description: new gateway
+  servers:
+    - source: com.stripe/mcp
+      exposure:
+        allow:
+          - '*'

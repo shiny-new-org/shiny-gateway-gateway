@@ -1,0 +1,9 @@
+version: '1.0'
+gateway:
+  name: shiny-gateway
+  description: new gateway
+  servers:
+    - source: com.stripe/mcp
+      exposure:
+        allow:
+          - '*'
